@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    </head>
+    <body>
+    <!-- 
+    get first name from user
+    get last name from user
+    add without using library' function
+    print full name
+    total length of full name
+    convert full name into uppercase
+    -->
+
+    <script>
+        let firstName = prompt("Enter First Name: ");
+        let lastName = prompt("Enter Last Name: ");
+
+        if (firstName && lastName) {
+        let fullName = `${firstName} ${lastName}`;
+        let len = fullName.length;
+
+        document.body.innerHTML = `<h1>Full Name: ${fullName}</h1>`;
+        document.body.innerHTML += `<h2>Length of your Name: ${len}</h2>`;
+
+        let upperLetter = fullName.toUpperCase();
+        document.body.innerHTML += `<h1>Upper Letter: ${upperLetter}</h1>`;
+        } else {
+        document.body.innerHTML =
+            "<h3>Please provide both first and last names.</h3>";
+        }
+    </script>
+    </body>
+</html>
