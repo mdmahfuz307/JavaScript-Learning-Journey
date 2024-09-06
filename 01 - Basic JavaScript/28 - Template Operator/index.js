@@ -56,4 +56,4 @@ console.log(amerName.charAt(3));             //OutPut are 3Index number char
 
 //charCodeAt()
 const charCode = 'Nirob';
-console.log(charCode.charCodeAt(4));   // Output are ASCII value
+console.log(charCode.charCodeAt(4));   // Output are  ASCII value
