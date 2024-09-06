@@ -38,8 +38,8 @@ console.log(addValue.concat(replaceAllValue)); // Output are 'Hello World!,Ami J
 
 
 //padStart()
-const lastFourDigits = '78856';
-console.log(lastFourDigits.padStart(12,'*'));   //Output  *******78856
+const lastFourDigits = '788565';
+console.log(lastFourDigits.padStart(12,'*'));   //Output  *******788565
 
 
 //padEnd()
