@@ -10,12 +10,12 @@ printThis();
 const addThis = (a,b) => {
     return a * b;
 }
-addThis(234,2232);
+console.log(addThis(234,2232));
 
 
 
-// Sort Syntex
+// Sort Syntax
 const print = (a) => console.log(a);
 
 const returnSomething = (a) => 2 * a;
-returnSomething(34);
+console.log(returnSomething(34));
