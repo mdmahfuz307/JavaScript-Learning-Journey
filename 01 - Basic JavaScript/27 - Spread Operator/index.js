@@ -21,6 +21,6 @@ console.log(sum(...ar));  // OutPut :- 26
 
 
 // Max & MIn in Spread
-let array = [6,7,4,3,2,8,9,10];
+let array = [6,7,4,3,2,8,9,10,11];
 
 console.log(Math.max(...array));
