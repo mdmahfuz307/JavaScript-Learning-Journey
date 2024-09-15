@@ -1,5 +1,5 @@
 // Throw dye amra nejera Error dekhate pari
-
+// vThe throw statement defines a custom error.
 try{
     console.log(x);
 }
