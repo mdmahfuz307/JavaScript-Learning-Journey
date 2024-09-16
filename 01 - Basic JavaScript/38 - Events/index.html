@@ -1,0 +1,51 @@
+/*
+
+Html events are "things" that happen to HTML elements.
+
+oneclick()    --> The user clicks an HTML elements
+
+onchange()    --> An HTML element has been changed
+
+onmouseover() --> The user moves the mouse over an HTML element
+
+onmouseout()  --> The user moves away from an HTML element
+
+onkeydown()   --> The user pushes a keyboard <keygen>
+
+onload()      --> The browser has finished loading the page
+
+*/
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+</body>
+
+
+
+
+
+<body>
+    <h2>The onmouseover Attribute</h2>
+    
+    <button onmouseover="MyEvent('Message Over Hyse')">Mouse Over</button><br/>
+
+    <button onmouseover="MyEvent('Message Out Hyse')">Mouse Out</button><br/>
+
+    <input onchange="MyEvent('Change hyse')"><br/>
+    <input onkeydown="MyEvent('Key down hyse')"><br/>
+    <input onkeyup="MyEvent('Key down hyse')"><br/>
+
+    <body onload = "MyEvent('Load hoyse')">
+
+    <script>
+        function MyEvent(msg){
+            console.log(msg);
+        }
+    </script>
+    
+    </body>
