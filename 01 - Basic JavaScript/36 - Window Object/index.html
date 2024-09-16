@@ -1,0 +1,65 @@
+// Practice By Using Browser (ai topic shudhu Fornt End e kaj kore)
+/*
+
+alert()   --> Displays the alert box containing message with ok button.
+
+confirm() --> Displays the confirm dialog box containing message with ok and cancel button.
+
+prompt()  --> Displays a dialog box to get input from the user.
+
+open()    --> Opens the new window.
+
+close()   --> Closes the current window.
+
+setTime() --> Performs action after specified time like calling function, evaluating expressions etc.
+
+*/
+
+
+<html>
+    <head>
+        <title>JavaScript Practice</title>
+    </head>
+    <body>
+
+        <button onclick="objAlert()">Click</button>
+        <button onclick="objConfirm()">Click</button>
+        <button onclick="objPrompt()">Click</button>
+        <button onclick="objOpen()">NewTabOpen</button>
+        <button onclick="objClose()">CloseTab</button>
+        <button onclick="objSetTime()">Click</button>
+        
+        <script>
+
+            function objAlert(){
+                alert("Save Success")
+            }
+
+            function objConfirm(){
+                let res = confirm("Do you want to delete!");
+                document.write(res);
+            }
+
+            function objPrompt(){
+                let name = prompt("Write your name");
+                document.write(name);
+            }
+
+            function objOpen(){
+                open();
+            }
+
+            function objClose(){
+                close();
+            }
+
+            // function objSetTime(){
+            //     setTimeout(function){
+            //         alert("Alert after 5 min")
+            //     },10000)
+            // }
+
+        </script>
+
+    </body>
+</html>
