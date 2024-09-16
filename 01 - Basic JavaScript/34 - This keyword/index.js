@@ -1,0 +1,1 @@
+// this always Object k point kore

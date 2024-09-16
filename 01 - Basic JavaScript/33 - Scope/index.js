@@ -79,7 +79,7 @@ const x = 2;     // Global scope
 //  ---->>> Automatically Global
 myFunction();
 
-// code here can use carName
+// code here can use carName5
 
 function myFunction() {
     carName = "Volvo";  //Ai code e variable er name bole dei ne tai ata automatic vabe Global scope dhore nbe
