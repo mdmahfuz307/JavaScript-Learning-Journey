@@ -6,11 +6,11 @@ Downwards
 --> children
 
 Upwards
--------
+--------
 --> parentELement
 
 Sideways
---------
+---------
 --> nextElementSibling,
     previousElementSibling
 --> parentElement + children + index
