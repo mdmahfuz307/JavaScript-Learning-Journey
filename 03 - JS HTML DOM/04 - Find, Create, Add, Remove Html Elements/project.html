@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulate</title>
+    <!-- Bootstrap Link ADD -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <ul id="MyItems"></ul> <br>
+    <input id="MyInput">
+
+    <button onclick="AddItem()">Add</button>
+
+    <script>
+        function AddItem(){
+            var itemValue = document.getElementById('MyInput').value;
+            var listItem = document.createElement('li');
+            listItem.innerHTML = itemValue;
+
+            var MyItems = document.getElementById('MyItems');
+            MyItems.appendChild(listItem)
+        }
+
+    </script>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
