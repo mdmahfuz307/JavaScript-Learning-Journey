@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulate</title>
+    <!-- Bootstrap Link ADD -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <img 
+    id="MyIm" 
+    height="140" 
+    width="140"
+    src="https://rabbil.com/files/rabbilVai.png"
+    alt="Image"/> <br>
+    
+    <button onclick="ChangeArr()">Change</button>
+
+
+    <script>
+        function ChangeArr(){
+            var MyIm  = document.getElementById('MyIm')
+            MyIm.width = "350"
+            MyIm.height = "350"
+        }
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
