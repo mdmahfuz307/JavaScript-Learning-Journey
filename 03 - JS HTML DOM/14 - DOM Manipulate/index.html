@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulate</title>
+    <!-- Bootstrap Link ADD -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    
+    <h1 id="MyID" class="text-primary">Bangladesh</h1>
 
+    <button onclick="AddStyle()">Add Style</button>
+    <button onclick="RemoveStyle()">Remove Style</button>
+
+    <script>
+        function AddStyle(){
+            let h1Tag = document.getElementById('MyID')
+            h1Tag.classList.add('text-primary')
+        }
+
+        function RemoveStyle(){
+            let h1Tag = document.getElementById('MyID')
+            h1Tag.classList.remove('text-primary')
+        }
+    </script>
 
     
     <script src="script.js"></script>
