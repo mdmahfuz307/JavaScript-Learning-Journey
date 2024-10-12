@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BackEnd To FrontEnd</title>
+</head>
+<body>
+
+  <h1 id="myData"></h1>
+
+  <script>
+
+      getProductListFromBackEnd();
+
+      async function getProductListFromBackEnd(){
+
+        try{
+
+          let myData = document.getElementById("myData")
+          myData.innerText = "Loading..........."
+
+
+          let URL = "http://164.68.107.70:6060/api/v1/ReadProduct"
+          let res = await fetch(URL)    // await use korar karon hlo w8 korarnor jrno 
+          let data = await res.json()    //ager line e jdi await na dtm ta hle ai line e aisa porto tokhon pblm hoto karon amader data jdi na ase ta hle JSON ta pabo ki kore?
+          
+          myData.innerText = JSON.stringify(data)  // Amra amader Brower e JSON k dekhaite pari na tai JSON data tare amader String e convert kore nete hy tai amra (JSON.stringify) use korese JSON k String e convert korar jrno
+
+          }catch(error){
+
+            let myData = document.getElementById("myData")
+            myData.innerText = "Something Went Wrong"
+            console.log(error)
+
+          }
+          
+        }
+
+
+
+    </script>
+</body>
+</html>
