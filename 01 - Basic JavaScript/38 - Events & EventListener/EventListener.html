@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListener</title>
+</head>
+<body>
+    <div>
+    <p id="para">Hello Nirob</p>     // Hello Nirob er opor click krle 
+    </div>
+
+
+    <script>
+
+
+
+    function changeText(){
+        let para = document.getElementById('para');
+        para.textContent = "Hello Mahfuz"                  // Click korar por Hello Mahfuz Asbe
+    }
+
+    let para = document.getElementById('para');
+
+    para.addEventListener('click',changeText);  
+
+    // para.removeEventListener('click',changeText)    ----> Chaile amra EvenListener k Change o krte Pari
+
+
+
+
+    </script>
+</body>
+</html>
