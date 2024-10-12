@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <button onclick="ExecPostRequest()">ExecPostRequest</button>
+
+
+  <script>
+
+    function ExecPostRequest(){
+
+    var URL = "http://164.68.107.70:6060/api/v1/CreateProduct";
+
+    var BodyData = {ProductName:"Demo",ProductCode:"2113131",Img:"abc", UnitPrice:"12", Qty:"1", TotalPrice:"12"}
+
+
+    var Configuration = {
+      method:"POST",
+      headers: {'Accept': 'application/json','Content-Type': 'application/json'},
+      body: JSON.stringify(BodyData)
+    }
+
+
+    fetch(URL,Configuration)
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
+    
+    }
+
+  </script>
+
+</body>
+</html>
