@@ -13,7 +13,7 @@
    - Structure (arrays, objects, etc.)
 
 ### 1. **Basic Validation (Well-formed JSON)**
-You can validate JSON syntax using online tools like [JSONLint](https://jsonlint.com/), or programmatically with `JSON.parse()` in JavaScript.
+You can validate JSON syntax using online tools like [jsonviewer](https://codebeautify.org/jsonviewer), [JSONLint](https://jsonlint.com/), or programmatically with `JSON.parse()` in JavaScript.
 
 #### Example:
 
