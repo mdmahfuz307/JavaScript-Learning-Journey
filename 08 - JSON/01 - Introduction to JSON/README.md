@@ -18,7 +18,7 @@
 3. **Example:**
    ```json
    {
-     "name": "Raiyan",
+     "name": "Nirob",
      "age": 25,
      "isStudent": true,
      "subjects": ["Math", "Science"],
