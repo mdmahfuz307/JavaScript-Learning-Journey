@@ -2,7 +2,7 @@
 // Web storage API - localStorage, sessionStorage
 
 // localStorage - store, read, update and remove data
-// no expiry date: data never gets lost even if you close the browser
+// No expiry date: data never gets lost even if you close the browser (This data is Permanent until the user deletes the data)
 
 // localStorage store data as key value pair - string
 
