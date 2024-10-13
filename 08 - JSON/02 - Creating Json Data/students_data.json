@@ -1,0 +1,41 @@
+{
+  "students": [
+    {
+      "name": "John Cena",
+      "middleName": null,
+      "age": 31,
+      "cgpa": 3.49,
+      "isRegistered": true,
+      "languages": ["Bengali", "English", "Hindi"],
+      "friends": [
+        {
+          "name": "Roman",
+          "age": 25
+        },
+        {
+          "name": "Jason",
+          "age": 22
+        }
+      ]
+    },
+
+    {
+      "name": "Leonel",
+      "middleName": null,
+      "age": 35,
+      "cgpa": 3.79,
+      "isRegistered": false,
+      "languages": ["Spanish", "English", "Urdu"],
+      "friends": [
+        {
+          "name": "Holder",
+          "age": 32
+        },
+        {
+          "name": "Tony",
+          "age": 32
+        }
+      ]
+    }
+  ]
+}
